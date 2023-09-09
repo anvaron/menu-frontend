@@ -1,6 +1,10 @@
 .App {
   text-align: center;
 }
+.App h2 {
+  color: #457b9d;
+  letter-spacing: 2px;
+}
 
 .App-logo {
   height: 40vmin;

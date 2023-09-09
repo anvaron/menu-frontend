@@ -1,16 +1,18 @@
-import './Container.css';
+import React from "react";
+import "./Container.css";
 
 const Container = ({ center, children, scroll = true }) => {
+  console.log(scroll)
   let classNames = ['Container'];
   if (center) {
     classNames.push('Container--center');
   }
 
-  if (scroll) {
+  if (children) {
     classNames.push('Container--scroll');
   }
 
-  console.log(`<Container /> rendered!`);
+  console.log(classNames);
   return <div className={classNames.join(' ')}>{children}</div>;
 };
 
